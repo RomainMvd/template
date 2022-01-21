@@ -22,6 +22,9 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { ViecampusComponent } from './viecampus/viecampus.component';
+import { DevdurComponent } from './devdur/devdur.component';
 
 @NgModule({
   imports: [
@@ -39,6 +42,9 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   declarations: [
     AppComponent,
     AdminLayoutComponent,
+    AccueilComponent,
+    ViecampusComponent,
+    DevdurComponent,
 
   ],
   providers: [],

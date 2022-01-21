@@ -8,6 +8,9 @@ import { IconsComponent } from '../../icons/icons.component';
 import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
+import { AccueilComponent } from 'app/accueil/accueil.component';
+import { ViecampusComponent } from 'app/viecampus/viecampus.component';
+import { DevdurComponent } from 'app/devdur/devdur.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -52,7 +55,7 @@ export const AdminLayoutRoutes: Routes = [
     //         component: UpgradeComponent
     //     }]
     // }
-    { path: 'dashboard',      component: DashboardComponent },
+    { path: 'dashboard',      component: DevdurComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
     { path: 'typography',     component: TypographyComponent },
