@@ -1,10 +1,8 @@
 <div class="logo">
-    <a href="https://www.creative-tim.com" class="simple-text">
-        <div class="logo-img">
-            <img src="/assets/img/angular2-logo-red.png"/>
-        </div>
-        Creative Tim
-    </a>
+    <span class="simple-text">
+       
+       Université de Tourcoing
+    </span>
 </div>
 <div class="sidebar-wrapper">
   <div *ngIf="isMobileMenu()">
@@ -19,7 +17,7 @@
         </div>
       </span>
     </form>
-    <ul class="nav navbar-nav nav-mobile-menu">
+    <!-- <ul class="nav navbar-nav nav-mobile-menu">
         <li class="nav-item">
             <a class="nav-link" href="javascript:void(0)">
                 <i class="material-icons">dashboard</i>
@@ -52,13 +50,43 @@
                 </p>
             </a>
         </li>
-    </ul>
+    </ul> -->
   </div>
     <ul class="nav">
-        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
-            <a class="nav-link" [routerLink]="[menuItem.path]">
-                <i class="material-icons">{{menuItem.icon}}</i>
-                <p>{{menuItem.title}}</p>
+        <li routerLinkActive="active" class="nav-item">
+            <a class="nav-link" href="../accueil.component.html">
+                <i class="material-icons">home</i>
+                <p>Accueil</p>
+            </a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+                <i class="material-icons">person</i>
+                <p>Profil</p>
+            </a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+                <i class="material-icons">groups</i>
+                <p>Vie sur le campus</p>
+            </a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+                <i class="material-icons">park</i>
+                <p>Engagements écologiques</p>
+            </a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+                <i class="material-icons">flight</i>
+                <p>International</p>
+            </a>
+        </li>
+        <li routerLinkActive="active" class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">
+                <i class="material-icons">phone</i>
+                <p>Contact</p>
             </a>
         </li>
     </ul>
